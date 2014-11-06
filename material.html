@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <title>Material</title>
 <link href = "layout.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="galleria/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="galleria/galleria-1.4.2.js"></script>
+<link href = "themes/classic/galleria.classic.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="galleria-1.4.2.js"></script>
+<script type="text/javascript" src="themes/classic/galleria.classic.min.js"></script>
 
 
 
@@ -37,14 +39,28 @@
  id = "aino" />
 </div>
 
-<div class="content">
+<div class="content2">
+
+<script>
+    Galleria.loadTheme('themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria');
+	Galleria.configure({
+    imageCrop: false,
+    transition: 'fade',
+	height: 850
+});
+</script>
 
 <div class="galleria">
-    <img src="images/img1.jpg" data-title="My title" data-description="My description">
-    <img src="images/img2.jpg" data-title="Another title" data-description="My <em>HTML</em> description">
+    <img src="images/paintings/66.jpg" data-title="My title" data-description="My description">
+    <!-- <img src="images/paintings/55.jpg" data-title="Another title" data-description="My description"> -->
+    <!-- <a href=#><img src="images/paintings/33.jpg" data-title="My title" data-description="My description"></a> -->
+    <!--<a href=><img src="images/paintings/55.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a> -->
 </div>
 
-<div class = "content">
+</div>
+
+<!-- <div class = "content">
 <div id = "table">
 <table width="650" border="0" align="auto">
   <tr>
@@ -95,7 +111,7 @@
   <source src="images/3minvideo.mp4" type="video/mp4">
 </video></td>
   </tr>
-</table>
+</table> -->
 
 </div>
 <footer>

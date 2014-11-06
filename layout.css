@@ -78,17 +78,17 @@ a:hover, a:active, a:focus {
 }
 
 .container {
-	background-color: none;
+	height: 100%;
 	margin: 0 auto;
-	top: 21px;
 }
 
 header {
 	background-color: none;
 }
 
-.content {
+.content2 {
 	width: 100%;
+	min-height: 500px;
 	max-width: 800px;
 	padding: 10px 0;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -98,7 +98,20 @@ header {
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
-	top: 20px;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	max-width: 800px;
+	padding: 10px 0;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: lighter;
+	text-align: justify;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .content ul, .content ol {
@@ -160,7 +173,7 @@ form {
 
 footer {
 	padding: 10px 0;
-	padding-top: 300px;
+	padding-top: 150px;
 	background-color: none;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align: center;
