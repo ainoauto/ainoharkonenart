@@ -6,6 +6,7 @@ body {
 	margin-right: 1px;
 	margin-bottom: 1px;
 	padding: 0;
+	max-width: 900px;
 }
 
 ul, ol, dl { /
@@ -40,8 +41,9 @@ h1 {
 	padding-bottom: 16px;
 	padding-left: 16px;
 	position: absolute;
-	left: 968px;
-	top: 148px;
+	left: 700px;
+	right: 100px;
+	top: 130px;
 }
 
 p {
@@ -56,12 +58,12 @@ a img {
 }
 
 img#aino {
-	position: relative;
+	position: static;
 	border-radius: 90px;
 	width: 150px;
 	height: 150px;
-	left: 62px;
-	bottom: 33px;
+	right: 0px;
+	top: 260px;
 }
 a:link {
 	color: #42413C;
@@ -79,7 +81,7 @@ a:hover, a:active, a:focus {
 
 .container {
 	height: 100%;
-	margin: 0 auto;
+	max-width: fit-content;
 }
 
 header {
@@ -126,12 +128,13 @@ header {
 	margin-left: 0px;
 	padding-top: 0px;
 	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 424px;
+	padding-bottom: 50px;
+	padding-left: 150px;
 	list-style-type: none;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	width: 870px;
+	position: static;
 }
 
 
@@ -211,6 +214,7 @@ img {
 	padding-bottom: 12px;
 	padding-left: 12px;
 }
+
 #table {
 	position: relative;
 	float: left;
@@ -229,10 +233,10 @@ body h2 {
 	text-decoration: underline;
 }
 #info2 {
-	position: relative;
-	bottom: 196px;
-	left: 334px;
-	border-radius: 44px;
+	position: absolute;
+	top: 400px;
+	left: 70px;
+	border-radius: 30px;
 	background-color: #CEDEA8;
 	padding-top: 0px;
 	padding-right: 0px;
