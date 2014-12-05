@@ -1,47 +1,51 @@
 @charset "UTF-8";
+
 body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	/*font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;*/
 	background-image: url(images/white_wall.png);
 	margin-top: 1px;
 	margin-right: 1px;
 	margin-bottom: 1px;
 	padding: 0;
-	max-width: 900px;
+	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-ul, ol, dl { /
-	padding: 0;
-	margin: 0;
+.header {
+	position: static;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-h2, h3, h4, h5, {
-	margin-top: 0;	 /
-	padding-right: 15px;
-	padding-left: 15px;
-	font-family: Century gothic;
-	font-size: 14px;
-	padding-top: 50px;
+.container {
+	height: 100%;
+	max-width: 100%;
 }
 
-h1 {
-	font-family: Arial;
-	font-size: 20px;
-	color: #94B44F;
-	font-style: italic;
+.content {
+	width: 100%;
+	height: 100%;
+	max-width: 900px;
+	padding: 10px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
 	font-weight: lighter;
-	padding-top: 19px;
-}
-
-p {
-	font-family: Century gothic;
-	font-size: 13px;
 	text-align: justify;
 	position: relative;
+	margin-right: auto;
+	margin-left: auto;
 }
 
+/*.content ul, .content ol {
+	padding: 0 15px 15px 40px; 
+	position: relative;
+}*/
+
 #info {
+	position: absolute;
+	right: -89px;
 	width: 200px;
 	height: 300px;
 	background-color: #CEDEA8;
@@ -50,16 +54,14 @@ p {
 	padding-right: 16px;
 	padding-bottom: 16px;
 	padding-left: 16px;
-	position: relative;
-	left: 700px;
-	right: 100px;
-	top: -550px;
+	top: 111px;
+	font-family: 'Abel', sans-serif;
 }
 
 #info2 {
-	position: relative;
-	top: -600px;
-	left: 70px;
+	position: absolute;
+	top: 361px;
+	left: 88px;
 	border-radius: 30px;
 	background-color: #CEDEA8;
 	padding-top: 0px;
@@ -67,10 +69,7 @@ p {
 	padding-bottom: 16px;
 	padding-left: 45px;
 	width: 250px;
-}
-
-a img { 
-	border: none;
+	font-family: 'Abel', sans-serif;
 }
 
 img#aino {
@@ -82,47 +81,52 @@ img#aino {
 	top: 260px;
 }
 
+img {
+	position: relative;
+}
+
+h1 {
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	color: #94B44F;
+	font-style: italic;
+	font-weight: lighter;
+	padding-top: 19px;
+}
+
+h2, h3, h4, h5, {
+	margin-top: 0;	 /
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: 'Abel', sans-serif;
+	font-size: 14px;
+	padding-top: 50px;
+}
+
+p {
+	font-family: 'Abel', sans-serif;
+	font-size: 13px;
+	text-align: justify;
+	position: relative;
+}
+
 a:link {
 	color: #42413C;
 	text-decoration: none; 
 }
 
-a:visited {
+/*a:visited {
 	color: #6E6C64;
 	text-decoration: underline;
-}
+}*/
 
 a:hover, a:active, a:focus {
 	text-decoration: none;
 }
 
-.container {
-	height: 100%;
-	max-width: 100%;
-}
-
-header {
-	background-color: none;
-}
-
-.content {
-	width: 100%;
-	height: 100%;
-	max-width: 800px;
-	padding: 10px;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-weight: lighter;
-	text-align: justify;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-
-.content ul, .content ol {
-	padding: 0 15px 15px 40px; 
-	position: relative;
+ul, ol, dl { /
+	padding: 0;
+	margin: 0;
 }
 
 #mainnav ul {
@@ -140,8 +144,6 @@ header {
 	width: 870px;
 	position: static;
 }
-
-
 
 #mainnav li {
 	border-bottom: none; 
@@ -174,15 +176,6 @@ header {
 	transition: 0.5s;
 }
 
-header, section, footer, aside, article, figure {
-	text-align: center;
-}
-img {
-	position: relative;
-}
-.container header div #mainnav ul li a {
-}
-
 #material {
 	font-family: Century Gothic;
 	font-style: normal;
@@ -205,25 +198,13 @@ img {
 	padding-left: 12px;
 }
 
-/*body h2 {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-variant: normal;
-	font-size: x-large;
-	text-decoration: underline;
-}*/
-
-
-
 footer {
 	padding: 10px 0;
-	padding-top: 150px;
-	background-color: none;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-top: 100px;
+	background-color: #CEDEA8;
 	text-align: center;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	left: 50%;
+	width: 100%;
 }
