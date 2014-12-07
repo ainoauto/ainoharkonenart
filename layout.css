@@ -48,8 +48,9 @@ body {
 
 #info {
 	position: absolute;
-	right: 150px;
-	top: 50px;
+	float: left;
+	left: 50px;
+	top: 300px;
 	width: 200px;
 	height: 300px;
 	background-color: #CEDEA8;
@@ -65,8 +66,8 @@ body {
 
 #info2 {
 	position: absolute;
-	top: 220px;
-	left: 170px;
+	top: 730px;
+	left: 50px;
 	border-radius: 30px;
 	background-color: #CEDEA8;
 	padding-top: 0px;
@@ -88,12 +89,19 @@ img#aino {
 
 img {
 	display: block;
-	margin-right: auto;
-	margin-left: auto;
 }
 
+img#logo {
+	bottom: 0px;
+	right: 10px;
+	position: absolute;
+}
+
+div#news {
+	padding-left: 150px;
+}
 #mainnav ul {
-	background-color: #dddddd;
+	background-color: #CEDEA8;
 	padding-bottom: 25px;
 	margin-right: auto;
 	margin-left: auto;
@@ -119,7 +127,7 @@ img {
 	padding-top: 6px;
 	padding-bottom: 6px; 
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 500;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -133,6 +141,21 @@ img {
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
+}
+
+#materialnav {
+	position: absolute;
+	list-style-type: none;
+	float: left;
+	left: 50px;
+	top: 300px;
+	background-color: none;
+	text-transform: uppercase;
+	padding-top: 6px;
+	padding-bottom: 6px; 
+	font-style: normal;
+	font-weight: 500;
+	font-family: Arial, "Helvetica Neue";
 }
 
 a:link {
@@ -180,12 +203,22 @@ h1 {
 	padding-top: 19px;
 }
 
-h3, h4, h5 {
+h4, h5 {
 	margin-top: 0;	 /
 	padding-right: 15px;
 	padding-left: 15px;
 	font-family: 'Abel', sans-serif;
 	font-size: 14px;
+	padding-top: 50px;
+}
+
+h3 { /*top header*/
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 60px;
+	color: #FFFFFF;
+	padding-left: 100px;
 	padding-top: 50px;
 }
 
@@ -220,9 +253,10 @@ table {
 footer {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: #dddddd;
-	position: relative;
+	background-color: #CEDEA8;
+	position: absolute;
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
+	
 }
