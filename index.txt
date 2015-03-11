@@ -1,0 +1,26 @@
+<div id = "info">
+		<h1>About me</h1>
+		<p>I'm a 21-year-old studying-to-be graphic designer who lives in Helsinki, Finland.</p>
+		<p>I've always loved being creative and portraying feelings and atmospheres that wouldn't else be depicted. I currently study graphic design, and do commissions ranging everywhere from drawings to websites.</p>
+		<img src="images/aino.jpg" alt = "aino" id = "aino"/>
+</div>
+
+<div id = "info2">
+	<h1>Contact information</h1>
+	<p>e-mail: aino_3(at)hotmail.com</p>
+	<p>phone: 050 554 9642</p>
+</div>		
+		
+<table style="width:500">
+  <tr>
+    <td><li><a href="material.html"><img src="images/button1.jpg"/></a></li></td>
+  </tr>
+  <tr>
+    <td><li><a href="material.html"><img src="images/button2.jpg"/></a></li></td>
+  </tr>
+  <tr>
+    <td><li><a href="material.html"><img src="images/button3.jpg"/></a></li></td>
+  </tr>
+</table>
+
+<br><br><br><br><br><br>

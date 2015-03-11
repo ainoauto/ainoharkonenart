@@ -1,0 +1,10 @@
+		
+			<footer>
+				<h6>&copy; 2014 Aino Härkönen</h6>
+			</footer>
+			
+		</div>
+	</div>
+</body>
+
+</html>

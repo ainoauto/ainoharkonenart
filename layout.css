@@ -11,31 +11,28 @@ body {
 }
 
 .header {
-	position: static;
-	width: 100%;
 	min-width: 700px;
-	height: 100%;
+	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
-	display: block;
 }
 
 .container {
 	height: 100%;
 	min-width: 700px;
-	padding-bottom: 100px;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .content {
 	min-width: 700px;
 	height: 100%;
-	max-width: 900px;
-	padding-top: 100px;
+	max-width: 1200px;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: lighter;
 	text-align: justify;
-	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -48,13 +45,11 @@ body {
 #info {
 	position: absolute;
 	float: left;
-	left: 50px;
-	top: 300px;
+	top: 250px;
 	width: 200px;
 	height: 300px;
 	background-color: #CEDEA8;
 	border-radius: 22px;
-	padding-top: 0px;
 	padding-right: 25px;
 	padding-left: 25px;
 	padding-bottom: 16px;
@@ -65,12 +60,10 @@ body {
 
 #info2 {
 	position: absolute;
-	top: 730px;
-	left: 50px;
+	float: left;
+	top: 700px;
 	border-radius: 30px;
 	background-color: #CEDEA8;
-	padding-top: 0px;
-	padding-right: 0px;
 	padding-left: 30px;
 	padding-bottom: 16px;
 	width: 200px;
@@ -96,25 +89,14 @@ img#logo {
 	position: absolute;
 }
 
-div#news {
-	position: absolute;
-	top: 20px;
-	left: 300px;
-	padding-left: 50px;
-	padding-right: 50px;
-	min-width: 400px;
-	max-width: 100%;
-}
 #mainnav ul {
 	background-color: #CEDEA8;
 	padding-bottom: 25px;
 	margin-right: auto;
 	margin-left: auto;
 	list-style-type: none;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Abel', Arial, sans-serif;
 	font-size: 12px;
-	position: relative;
-	display: block;
 }
 
 #mainnav li {
@@ -148,19 +130,6 @@ div#news {
 	transition: 0.5s;
 }
 
-#materialnav { /*the navigation in the material section*/
-	position: absolute;
-	list-style-type: none;
-	float: left;
-	left: 50px;
-	top: 200px;
-	background-color: none;
-	text-transform: uppercase;
-	font-style: normal;
-	font-weight: 400;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 a:link {
 	color: #42413C;
 	text-decoration: none; 
@@ -175,28 +144,6 @@ ul, ol, dl { /
 	margin: 0;
 }
 
-#material {
-	font-family: Century Gothic;
-	font-style: normal;
-	font-weight: lighter;
-	text-transform: uppercase;
-	padding-top: 20px;
-}
-
-#materialinfo {
-	border-radius: 18px;
-	background-color: #CEDEA8;
-	width: 250px;
-	margin-top: 30px;
-	margin-right: 30px;
-	margin-bottom: 30px;
-	margin-left: 30px;
-	padding-top: 12px;
-	padding-right: 12px;
-	padding-bottom: 12px;
-	padding-left: 12px;
-}
-
 h1 {
 	font-family: 'Abel', sans-serif;
 	font-size: 20px;
@@ -206,13 +153,13 @@ h1 {
 	padding-top: 19px;
 }
 
-h4, h5 {
-	margin-top: 0;	 /
-	padding-right: 15px;
-	padding-left: 15px;
+h2 { /*large header, used in index and faq*/
 	font-family: 'Abel', sans-serif;
-	font-size: 14px;
-	padding-top: 50px;
+	font-size: 40px;
+	color: #5e5e5e;
+	font-weight: lighter;
+	padding-top: 19px;
+	
 }
 
 h3 { /*top header*/
@@ -221,15 +168,15 @@ h3 { /*top header*/
 	font-weight: 300;
 	font-size: 60px;
 	color: #FFFFFF;
-	left: 15%;
+	padding-left: 70px;
 }
 
-h2 { /*large header, used in index and faq*/
+h4, h5 {
+	padding-right: 15px;
+	padding-left: 15px;
 	font-family: 'Abel', sans-serif;
-	font-size: 40px;
-	color: #5e5e5e;
-	font-weight: lighter;
-	padding-top: 19px;
+	font-size: 14px;
+	padding-top: 50px;
 }
 
 h6 {	/*footer related*/
@@ -248,17 +195,17 @@ p {
 }
 
 table {
-	margin-left: auto;
-	margin-right: auto;
+	border-spacing: 70px;
+	padding-left: 370px;
+	list-style-type: none;
+	
 }
 
 footer {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: #CEDEA8;
-	position: absolute;
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
+	min-width: 700px;
+	max-width: 1200px;
 	
 }
